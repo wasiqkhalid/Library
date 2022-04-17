@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <h1>My Library</h1>
+        <button id="ABbtn">Add Book</button>
+    </header>
+    <!-- Popup form -->
+    <div id="form" class="formContainer">
+        <div class="blocker"></div>
+        <form class="formContents" id="myform">
+            <h2>New Book</h2>
+            <label for="btitle">Title:</label>
+            <input type="text" name="btitle" required>
+            <label for="bauthor">Author:</label>
+            <input type="text" name="bauthor" required>
+            <label for="bpages">Number of Pages:</label>
+            <input type="text" name="bpages" required>
+            <div>
+                <label for="bread">Book read?:</label>
+                <input type="checkbox" name="bread">
+            </div>
+            <input id="submitbtn" class="submitbtn" type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <div class="mainContainer">
+        <div id="innerContainer" class="innerContainer">
+            <!-- Template Div -->
+            <!-- <div class="card">
+                <div class="section1">
+                    <div id="bookTitle" class="title"></div>
+                </div>
+                <div class="section2">
+                    <div class="cardSection">
+                        <div>Author:</div>
+                        <div id="authorName"></div>
+                    </div>
+                    <div class="cardSection">
+                        <div>Number of Pages:</div>
+                        <div id="nPages"></div>
+                    </div>
+                    <div class="cardSection">
+                        <div>Book read:</div>
+                        <div id="readB"></div>
+                    </div>
+                </div>
+                <div class="section3">
+                    <button class="btn">Read</button>
+                    <button class="btn">Remove</button>
+                </div>
+                
+            </div> -->
+        </div>
+    </div>
+    <script src="index.js" defer></script>
+</body>
+</html>

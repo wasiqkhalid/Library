@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: #212121;
+    font-family: 'Roboto';
+    color: whitesmoke;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #313131;
+}
+header > h1 {
+    color: whitesmoke;
+    font-family: 'Fredoka One';
+}
+header > button {
+    position: relative;
+    padding: 5px 15px 5px 15px;
+    border-radius: 7.5px;
+    border: 1px solid darkgray;
+    background-color: whitesmoke;
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+header > button:hover {
+    background-color: lightgray;
+    border: 1px solid white;
+}
+header > button:active{
+    border: 1px solid darkgray;
+    background-color: whitesmoke; 
+}
+/* Popup Form */
+.formContainer {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    right: 1rem;
+    background-color: #313131;
+    border: 1px solid lightgray;
+    z-index: 1;
+}
+.blocker {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+    background: rgba(0,0,0,.5);
+}
+.formContainer .formContents {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    transform: translate(0, 0);
+    gap: 0.5rem;
+}
+.show {
+    display: flex;
+}
+
+.formContents > input {
+    padding: 0.5rem;
+}
+.submitbtn {
+    width: fit-content;
+}
+
+/* Cards Container */
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem ;
+}
+.innerContainer {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid #313131;
+    gap: 1rem;
+    flex-flow: row wrap;
+}
+.card {
+    display: flex;
+    width: 300px;
+    border: 1px solid whitesmoke;
+    background-color: #313131;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+.title {
+    font-size: 30px;
+    text-decoration: underline;
+    color: darkgreen;
+}
+.cardSection {
+    display: flex;
+    gap: 1rem;
+}
+.btn {
+    padding: 0 5px 0 5px;
+}
+.section3 {
+    display: flex;
+    justify-content: space-between;
+}
